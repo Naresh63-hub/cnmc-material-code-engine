@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 .env
+*.db
+*.jsonl
+*.json
+output_v2.txt
