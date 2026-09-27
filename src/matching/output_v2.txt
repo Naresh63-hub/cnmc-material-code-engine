@@ -1,0 +1,161 @@
+====================================================================================================
+MATCHING ENGINE v2 — WITH SAFETY GATE — 33 cross-CPSE pairs
+====================================================================================================
+
+[AUTO-LINK               ] confidence=1.0
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+
+[BLOCKED — SAFETY GATE   ] confidence=0.945
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 300
+
+[BLOCKED — SAFETY GATE   ] confidence=0.945
+    A: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 300
+
+[BLOCKED — SAFETY GATE   ] confidence=0.875
+    A: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    B: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    >>> SAFETY GATE TRIGGERED: material_grade differs: A216 vs A182 F316
+
+[BLOCKED — SAFETY GATE   ] confidence=0.696
+    A: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 800 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.696
+    A: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 800 vs 600
+
+[NEEDS REVIEW            ] confidence=0.677
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+
+[NEEDS REVIEW            ] confidence=0.677
+    A: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+
+[NEEDS REVIEW            ] confidence=0.672
+    A: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+
+[BLOCKED — SAFETY GATE   ] confidence=0.658
+    A: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 300
+
+[BLOCKED — SAFETY GATE   ] confidence=0.5
+    A: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 800 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.497
+    A: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 800 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.451
+    A: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    B: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 300 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.443
+    A: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    B: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 300 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.441
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.441
+    A: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.433
+    A: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.41
+    A: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    B: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 300 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.4
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.4
+    A: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.39
+    A: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 600
+
+[BLOCKED — SAFETY GATE   ] confidence=0.383
+    A: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.373
+    A: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.289
+    A: HPCL-F302 (HPCL)     — "Flange WN RF 300# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '300', 'material_grade': 'A105'}
+    B: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 300 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.287
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 800
+
+[BLOCKED — SAFETY GATE   ] confidence=0.287
+    A: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    >>> SAFETY GATE TRIGGERED: pressure_class differs: 150 vs 800
+
+[NEEDS REVIEW            ] confidence=0.25
+    A: IOCL-F210 (IOCL)     — "Weld Neck Flange, Raised Face, Class 150, Carbon Steel A105, 6 inch, per ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+[NEEDS REVIEW            ] confidence=0.227
+    A: ONGC-F001 (ONGC)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+[NEEDS REVIEW            ] confidence=0.227
+    A: BPCL-F301 (BPCL)     — "Flange WN RF 150# ASTM A105 6IN ASME B16.5"  attrs={'pressure_class': '150', 'material_grade': 'A105'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+[NEEDS REVIEW            ] confidence=0.227
+    A: GAIL-V210 (GAIL)     — "Ball Valve 2IN A105 800# Screwed End API 6D"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+[NEEDS REVIEW            ] confidence=0.221
+    A: IOCL-V451 (IOCL)     — "Gate Valve 8IN A182 F316 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A182 F316'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+[NEEDS REVIEW            ] confidence=0.219
+    A: ONGC-V450 (ONGC)     — "Gate Valve 8IN A216 WCB 600# API 6D Flanged"  attrs={'pressure_class': '600', 'material_grade': 'A216'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+[NEEDS REVIEW            ] confidence=0.215
+    A: OIL-V300 (Oil India) — "API 6D Ball Valve, Screwed, 2", Class 800, A105"  attrs={'pressure_class': '800', 'material_grade': 'A105'}
+    B: HPCL-999 (HPCL)      — "Welding Electrode 3.15mm E6013"  attrs={}
+
+====================================================================================================
+SUMMARY: 1 auto-linked | 10 needs review | 22 BLOCKED by Safety Gate
+====================================================================================================

@@ -1,0 +1,182 @@
+[
+  {
+    "match_id": "M-ONGC-F001-SAIL-F045",
+    "item_a": "ONGC-F001",
+    "item_b": "SAIL-F045",
+    "confidence_score": 0.62,
+    "score_breakdown": {
+      "text_similarity": 0.6,
+      "spec_match": 0.4,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-V002-SAIL-V046",
+    "item_a": "ONGC-V002",
+    "item_b": "SAIL-V046",
+    "confidence_score": 0.611,
+    "score_breakdown": {
+      "text_similarity": 0.522,
+      "spec_match": 0.5,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-F088-SAIL-F045",
+    "item_a": "ONGC-F088",
+    "item_b": "SAIL-F045",
+    "confidence_score": 0.462,
+    "score_breakdown": {
+      "text_similarity": 0.404,
+      "spec_match": 0.2,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-F088-SAIL-V046",
+    "item_a": "ONGC-F088",
+    "item_b": "SAIL-V046",
+    "confidence_score": 0.386,
+    "score_breakdown": {
+      "text_similarity": 0.221,
+      "spec_match": 0.25,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-G003-SAIL-F045",
+    "item_a": "ONGC-G003",
+    "item_b": "SAIL-F045",
+    "confidence_score": 0.375,
+    "score_breakdown": {
+      "text_similarity": 0.231,
+      "spec_match": 0.2,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-F001-SAIL-V046",
+    "item_a": "ONGC-F001",
+    "item_b": "SAIL-V046",
+    "confidence_score": 0.34,
+    "score_breakdown": {
+      "text_similarity": 0.16,
+      "spec_match": 0.2,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-V002-SAIL-F045",
+    "item_a": "ONGC-V002",
+    "item_b": "SAIL-F045",
+    "confidence_score": 0.336,
+    "score_breakdown": {
+      "text_similarity": 0.173,
+      "spec_match": 0.167,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-G003-SAIL-V046",
+    "item_a": "ONGC-G003",
+    "item_b": "SAIL-V046",
+    "confidence_score": 0.336,
+    "score_breakdown": {
+      "text_similarity": 0.121,
+      "spec_match": 0.25,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-F001-SAIL-047",
+    "item_a": "ONGC-F001",
+    "item_b": "SAIL-047",
+    "confidence_score": 0.257,
+    "score_breakdown": {
+      "text_similarity": 0.174,
+      "spec_match": 0.3,
+      "unit_compatibility": 0.4
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-P004-SAIL-V046",
+    "item_a": "ONGC-P004",
+    "item_b": "SAIL-V046",
+    "confidence_score": 0.25,
+    "score_breakdown": {
+      "text_similarity": 0.1,
+      "spec_match": 0.0,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-P004-SAIL-F045",
+    "item_a": "ONGC-P004",
+    "item_b": "SAIL-F045",
+    "confidence_score": 0.248,
+    "score_breakdown": {
+      "text_similarity": 0.097,
+      "spec_match": 0.0,
+      "unit_compatibility": 1.0
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-G003-SAIL-047",
+    "item_a": "ONGC-G003",
+    "item_b": "SAIL-047",
+    "confidence_score": 0.231,
+    "score_breakdown": {
+      "text_similarity": 0.122,
+      "spec_match": 0.3,
+      "unit_compatibility": 0.4
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-P004-SAIL-047",
+    "item_a": "ONGC-P004",
+    "item_b": "SAIL-047",
+    "confidence_score": 0.227,
+    "score_breakdown": {
+      "text_similarity": 0.113,
+      "spec_match": 0.3,
+      "unit_compatibility": 0.4
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-V002-SAIL-047",
+    "item_a": "ONGC-V002",
+    "item_b": "SAIL-047",
+    "confidence_score": 0.224,
+    "score_breakdown": {
+      "text_similarity": 0.108,
+      "spec_match": 0.3,
+      "unit_compatibility": 0.4
+    },
+    "status": "needs_review"
+  },
+  {
+    "match_id": "M-ONGC-F088-SAIL-047",
+    "item_a": "ONGC-F088",
+    "item_b": "SAIL-047",
+    "confidence_score": 0.219,
+    "score_breakdown": {
+      "text_similarity": 0.098,
+      "spec_match": 0.3,
+      "unit_compatibility": 0.4
+    },
+    "status": "needs_review"
+  }
+]

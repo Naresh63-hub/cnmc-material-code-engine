@@ -1,0 +1,29 @@
+---
+name: Tier Task
+about: A build task for one of the 5 architecture tiers
+title: "[Tier X] Short task description"
+labels: ""
+assignees: ""
+---
+
+**Tier:** (1 / 2 / 3 / 4 / 5)
+**Spec doc:** link to the relevant `docs/tierX-*.md`
+
+## Task
+What specifically is being built in this issue (a sub-piece of the tier, not the whole
+tier at once — break it down).
+
+## Input
+What this task consumes (reference the schema in ARCHITECTURE.md).
+
+## Output
+What this task produces (reference the schema in ARCHITECTURE.md).
+
+## Definition of Done
+- [ ] Code committed to the correct `src/<tier>/` folder
+- [ ] Output validated against the schema
+- [ ] Short usage note added to the tier's README
+- [ ] Sample output committed for the next tier to test against (if applicable)
+
+## Notes
+Anything the assignee should know before starting.
